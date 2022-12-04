@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dbt-mermaid"
+version = "0.1.0"
+description = ""
+authors = ["Fraser Isbester <28307321+Fraser-Isbester@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "dbt_mermaid"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+networkx = "^2.8.8"
+dbt-core = "^1.3.1"
+
+[tool.poetry.scripts]
+dbt_mermaid = 'dbt_mermaid.cli:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
